@@ -16,3 +16,22 @@ Date: 2/19/22
         do a console.log test
 
 - Check if MetaMask exists
+
+
+- Request all the accounts 
+    window.ethereum.request()
+
+
+- Hold current wallet Address
+    Using the 'useState' React Hook
+
+- Set wallet address 
+    with the first account in the Array
+        setWalletAddress(accounts[0]);
+
+- Install Ethers.js node package
+    npm install ethers 
+
+- Connect wallet using Web3 Provider
+
+- Use this provider for smart contract instructions

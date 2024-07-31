@@ -1,5 +1,6 @@
 import './App.css';
 import { useState } from 'react';
+import { ethers } from 'ethers';
 
 function App() {
 
@@ -30,24 +31,27 @@ function App() {
 
     } else {
       console.log('MetaMask not detected');
+      alert('MetaMask is not installed. Please install it to use this app.');
     }
   }
 
-  // async function connectWallet() {
-  //   if(typeof window.ethereum !== 'undefined') {
-  //     await requestAccount();
+  async function connectWallet() {
+    if(typeof window.ethereum !== 'undefined') {
+      await requestAccount();
 
-  //     const provider = new ethers.providers.Web3Provider(window.ethereum);
+      const provider = new ethers.providers.Web3Provider(window.ethereum);
+      console.log('Provider:', provider);
 
-  //   }
-  // }
+    }
+  }
 
   return (
     <div className="App">
       <header className="App-header">
         <button
         
-        onClick={requestAccount}
+        // onClick={requestAccount}
+        onClick={connectWallet}
         
         >Connect Wallet</button>
         <h3>Wallet Address: {walletAddress}</h3>
