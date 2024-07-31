@@ -1,0 +1,18 @@
+Title: Web3 Tutorial - Connect MetaMask Wallet - ReactJS + Ethers.js 
+URL: https://www.youtube.com/watch?v=0nNJzq8k0h8
+Date: 2/19/22
+
+
+- create a new react-App
+
+- App.js
+    delete everything in header tag 
+        replace with button and h3 tag 
+
+- the button will jave an onClick event listener
+
+- that will be listening for the function 
+    'requestAccount' which will be asyhnchronous
+        do a console.log test
+
+- Check if MetaMask exists
