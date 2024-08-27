@@ -14,7 +14,7 @@ Date: 2/19/22
 - that will be listening for the function 
     'requestAccount' which will be asyhnchronous
         do a console.log test
-
+ 
 - Check if MetaMask exists
 
 
